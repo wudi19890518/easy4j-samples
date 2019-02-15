@@ -1,6 +1,7 @@
 package com.easy4j.samples.service;
 
 import org.easy4j.framework.annotation.Service;
+import org.easy4j.framework.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +11,7 @@ import java.util.Map;
 @Service
 public class UserService {
 
-
+    @Transactional
     public List list(){
         List list = new ArrayList();
         Map user = new HashMap();
